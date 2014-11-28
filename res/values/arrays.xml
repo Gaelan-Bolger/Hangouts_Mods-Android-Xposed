@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="flash_interval_entries">
+        <item>&#189; second</item>
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+    </string-array>
+    <string-array name="flash_interval_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+    </string-array>
+    <string-array name="flash_duration_entries">
+        <item>&#188; second</item>
+        <item>&#189; second</item>
+        <item>&#190; second</item>
+        <item>1 second</item>
+    </string-array>
+    <string-array name="flash_duration_values">
+        <item>300</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="flash_repetition_entries">
+        <item>Single flash</item>
+        <item>5 flashes</item>
+        <item>10 flashes</item>
+        <item>20 flashes</item>
+    </string-array>
+    <string-array name="flash_repetition_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="action_buttons_array">
+        <item>Call</item>
+        <item>Respond</item>
+        <item>Mark as read</item>
+        <item>Show</item>
+    </string-array>
+    <string-array name="punctuation_array">
+        <item>semicolon</item>
+        <item>exclamation mark</item>
+        <item>question mark</item>
+        <item>comma</item>
+    </string-array>
+    <string-array name="symbols_array">
+        <item>;</item>
+        <item>!</item>
+        <item>"?"</item>
+        <item>,</item>
+    </string-array>
+    <string-array name="delayed_punctuation_array">
+        <item>point</item>
+    </string-array>
+    <string-array name="delayed_symbols_array">
+        <item>.</item>
+    </string-array>
+
+</resources>

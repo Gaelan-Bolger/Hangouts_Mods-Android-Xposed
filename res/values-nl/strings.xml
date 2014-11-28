@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <string-array name="punctuation_array">
+        <item>puntkomma</item>
+        <item>uitroepteken</item>
+        <item>vraagteken</item>
+        <item>komma</item>
+        <item>punt</item>
+    </string-array>
+    
+    <string-array name="symbols_array">
+        <item>;</item>
+        <item>!</item>
+        <item>"?"</item>
+        <item>,</item>
+        <item>.</item>
+    </string-array>
+    
+    <string-array name="delayed_punctuation_array">
+    </string-array>
+    
+    <string-array name="delayed_symbols_array">
+    </string-array>
+</resources>

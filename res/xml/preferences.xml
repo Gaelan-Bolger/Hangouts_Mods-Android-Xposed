@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/category_general" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="wake_on_new_sms"
+            android:summaryOff="@string/wake_on_new_SMS_summary_off"
+            android:summaryOn="@string/wake_on_new_SMS_summary_on"
+            android:title="@string/wake_on_new_SMS_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/category_flash" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="flash_flashlight"
+            android:summary="@string/flash_flashlight_summary"
+            android:title="@string/flash_flashlight_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="flash_flashlight"
+            android:key="flash_screen_on"
+            android:summaryOff="@string/flash_flashlight_screen_on_summary_off"
+            android:summaryOn="@string/flash_flashlight_screen_on_summary_on"
+            android:title="@string/flash_flashlight_screen_on_title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="flash_flashlight"
+            android:key="flash_fast_cancel"
+            android:summaryOff="@string/flash_flashlight_fast_cancel_summary_off"
+            android:summaryOn="@string/flash_flashlight_fast_cancel_summary_on"
+            android:title="@string/flash_flashlight_fast_cancel_title" />
+
+        <ListPreference
+            android:defaultValue="1000"
+            android:dependency="flash_flashlight"
+            android:entries="@array/flash_interval_entries"
+            android:entryValues="@array/flash_interval_values"
+            android:key="flash_interval"
+            android:summary="@string/flash_flashlight_interval_summary"
+            android:title="@string/flash_flashlight_interval_title" />
+        <ListPreference
+            android:defaultValue="300"
+            android:dependency="flash_flashlight"
+            android:entries="@array/flash_duration_entries"
+            android:entryValues="@array/flash_duration_values"
+            android:key="flash_duration"
+            android:summary="@string/flash_flashlight_duration_summary"
+            android:title="@string/flash_flashlight_duration_title" />
+        <ListPreference
+            android:defaultValue="10"
+            android:dependency="flash_flashlight"
+            android:entries="@array/flash_repetition_entries"
+            android:entryValues="@array/flash_repetition_values"
+            android:key="flash_repetitions"
+            android:summary="@string/flash_flashlight_repetitions_summary"
+            android:title="@string/flash_flashlight_repetitions_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
