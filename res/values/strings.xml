@@ -24,12 +24,12 @@
     <string name="wake_on_new_SMS_summary_on">Screen turns on when a new SMS or Hangout is received</string>
     <string name="flash_flashlight_title">Enable torch notifications</string>
     <string name="flash_flashlight_summary">Torch activates when a new SMS or Hangout is received</string>
-    <string name="flash_flashlight_screen_on_title">Flash with screen on</string>
+    <string name="flash_flashlight_screen_on_title">Screen on notify</string>
     <string name="flash_flashlight_screen_on_summary_off">Only flash when screen is off</string>
     <string name="flash_flashlight_screen_on_summary_on">Flash when screen is on or off</string>
-    <string name="flash_flashlight_fast_cancel_title">Fast cancel</string>
-    <string name="flash_flashlight_fast_cancel_summary_off">Keep flashing after the screen has turned on</string>
-    <string name="flash_flashlight_fast_cancel_summary_on">Stop flashing when the screen is turned on</string>
+    <string name="flash_flashlight_fast_cancel_title">Screen state cancel</string>
+    <string name="flash_flashlight_fast_cancel_summary_off">Keep flashing after toggling screen state</string>
+    <string name="flash_flashlight_fast_cancel_summary_on">Stop flashing after toggling screen state</string>
     <string name="flash_flashlight_interval_title">Interval</string>
     <string name="flash_flashlight_interval_summary">How long to pause between flashes</string>
     <string name="flash_flashlight_duration_title">Duration</string>

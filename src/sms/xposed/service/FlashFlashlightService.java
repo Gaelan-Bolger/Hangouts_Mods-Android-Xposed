@@ -2,7 +2,7 @@ package sms.xposed.service;
 
 import static sms.xposed.util.LogUtils.LOGD;
 import static sms.xposed.util.LogUtils.makeLogTag;
-import sms.xposed.receiver.ScreenReceiver;
+import sms.xposed.receiver.ScreenStateReceiver;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -27,7 +27,7 @@ public class FlashFlashlightService extends Service {
 	private Camera mCamera;
 	private Parameters mParameters;
 	private int mFlashCount;
-	private ScreenReceiver screenReceiver;
+	private ScreenStateReceiver screenReceiver;
 	private boolean previewOn = false;
 
 	@Override
@@ -55,9 +55,8 @@ public class FlashFlashlightService extends Service {
 			FLASH_REPETITIONS = Integer.parseInt(prefs.getString(
 					"flash_repetitions", String.valueOf(FLASH_REPETITIONS)));
 			if (prefs.getBoolean("flash_fast_cancel", true)) {
-				screenReceiver = new ScreenReceiver();
-				registerReceiver(screenReceiver,
-						screenReceiver.getIntentFilter());
+				screenReceiver = new ScreenStateReceiver();
+				screenReceiver.register(this);
 			}
 			mFlashCount = 0;
 			flashOn();
@@ -73,7 +72,7 @@ public class FlashFlashlightService extends Service {
 		LOGD(TAG, "onDestroy");
 		releaseCamera();
 		if (null != screenReceiver) {
-			unregisterReceiver(screenReceiver);
+			screenReceiver.unregister(this);
 		}
 	}
 

@@ -11,6 +11,7 @@ import android.content.pm.PackageManager;
 public class FlashFlashlightReceiver extends BroadcastReceiver {
 
 	private static final String TAG = makeLogTag(FlashFlashlightReceiver.class);
+	public static final String ACTION_FLASHFLASHLIGHT_RECEIVER = "sms.xposed.flashflashlight_receiver";
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
