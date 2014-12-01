@@ -1,5 +1,8 @@
-package sms.xposed;
+package sms.xposed.activity;
 
+import sms.xposed.R;
+import sms.xposed.R.string;
+import sms.xposed.R.xml;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
